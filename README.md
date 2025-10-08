@@ -1,12 +1,14 @@
 # IFI
-## Toolbox and application for THz, FMCW and MV measurements for Inline Food Inspection
-This project containes all the relevant files for the implementation of the Inline-Food-Inspection application. Note, that the two class files for the call of THz and Machine Vision measurements have to be downloaded from the corresponding github project (files to be placed in the same folder as IFI.py).
+## Toolbox and application for THz and optical camera sensing for Inline Food Inspection
+This project containes all the relevant files for the implementation of the Inline-Food-Inspection application based on the sub-terahertz sensing system 'TeraSense TeraFAST-256-HS-100' and the industrial-grade optical camera 'Basler daA3840-45uc'
 
 The following files and provided:
-- IFI.py: containes the IFI class and the main call. Refers to the classes 'THz' in thz.py and 'MV' in MV.py.
-- configmmwstudio.m: Matlab-file for the configuration of mmwave Studio during startup sequence of the main IFI call. Note that mmstudio has to be started manually before this function is called.
+- IFIMeasure.py: Class file that defines the IFIMeasurement class and a main call (at the end of the file) for the asynchronous call of the sensing systems. Requires the classes 'THz' in thz.py and 'Camera' in Camera.py to work as intended.
+- IFIAnalysis.py: Class file that defines the IFIAnalysis class, which is required to apply the postprocessing and evaluation operations.
 - edge_detection_udp.py: File that has to be implemented on a Raspberry Pie (> 4.0) in order to send a trigger via UDP message to the recipient (laptop running IFI).
+- IFIDiagrams.ipynb: Jupyter Notebook file that plots the diagrams that were used in the paper 'Detection of Low-Density Foreign Objects in Confectionery Products Using Sub-Terahertz Technology'.
 - requirements.txt: Requirements file for the installation of required external frameworks using PIP.
-- startmmwstudio.m: Matlab-file for the execution of a measurement (burst of frames). Data is saved locally on the MMWCAS-EVM-Board and transferred to the local TI folder (post processing inside of mmw studio section). Note that a connection via WinSCP has to be established to the backend board and after every measurement the folders have to be cleared in order to avoid redundant data transfer.
+- thz_processed_image_extracts.zip: Dataset that was used for the paper 'Detection of Low-Density Foreign Objects in Confectionery Products Using Sub-
+Terahertz Technology' consisting of THz images for the selected confectionery products (four types) using different foreign objects (that vary in material and sizes) and a varying attenuation. 
 
 Branch: Master
