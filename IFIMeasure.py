@@ -81,7 +81,6 @@ path_mv = r'C:\Users\julia\Documents\Thz\Mv_git\Machine-Vision'         # Path t
 
 # endregion
 
-
 # region dependencies
 
 # Miscellaneous
@@ -103,8 +102,7 @@ from datetime import datetime
 import keyboard
 import matlab.engine
 sys.path.append(path_thz)
-#from THz import THz
-from THz_2 import THz
+from THz import THz
 
 # FMCW-based
 sys.path.append(path_fmcw)
@@ -116,22 +114,6 @@ import cv2
 sys.path.append(path_mv)
 from MV import MV
 from skimage.filters import threshold_otsu
-
-# ML /DL
-# import tensorflow as tf
-# from tensorflow import keras
-# from keras import ops
-# from keras.layers import (Input, Conv2D, Flatten, Dense, 
-#                           Conv2DTranspose, Reshape, Activation, BatchNormalization, LeakyReLU, Dropout, MaxPooling2D, UpSampling2D, Concatenate, MultiHeadAttention, Add, Subtract, Multiply)
-# from keras.models import Model, Sequential
-# from keras.optimizers import SGD, Adam
-# from keras.regularizers import l2
-# from keras.preprocessing.image import ImageDataGenerator
-# from keras.losses import CategoricalCrossentropy
-# from keras import backend as K
-# from sklearn.model_selection import train_test_split
-# from sklearn.metrics import precision_recall_fscore_support
-# from sklearn.metrics import roc_curve, auc
 
 # endregion
 
