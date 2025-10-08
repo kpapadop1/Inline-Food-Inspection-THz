@@ -7,7 +7,7 @@ The following files and provided:
 - IFIAnalysis.py: Class file that defines the IFIAnalysis class, which is required to apply the postprocessing and evaluation operations.
 - edge_detection_udp.py: File that has to be implemented on a Raspberry Pie (> 4.0) in order to send a trigger via UDP message to the recipient (laptop running IFI).
 - IFIDiagrams.ipynb: Jupyter Notebook file that plots the diagrams that were used in the paper 'Detection of Low-Density Foreign Objects in Confectionery Products Using Sub-Terahertz Technology'.
-- conveyor_belt_drive_control_siemens_s7_1200: TIA-program of the conveyor belt drive based on the PLC SIEMENS S7-1200.
+- conveyor_belt_drive_control_siemens_s7_1200.zip: TIA-program of the conveyor belt drive based on the PLC SIEMENS S7-1200.
 - requirements.txt: Requirements file for the installation of required external frameworks using PIP.
 - thz_processed_image_extracts.zip: Dataset that was used for the paper 'Detection of Low-Density Foreign Objects in Confectionery Products Using Sub-
 Terahertz Technology' consisting of THz images for the selected confectionery products (four types) using different foreign objects (that vary in material and sizes) and a varying attenuation. 
